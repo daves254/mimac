@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --grid-max: 1200px; }
+html, body { height: 100%; }
+body { @apply text-white font-display bg-slate-950; }
+
+.parallax { position: relative; will-change: transform; transition: transform 0.08s linear; }
+.section-fixed-bg { background-attachment: fixed; background-size: cover; background-position: center; }
+.radial-mask { mask-image: radial-gradient(circle at center, black 60%, transparent 100%); }
